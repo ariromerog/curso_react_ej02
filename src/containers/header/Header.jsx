@@ -14,6 +14,7 @@ const Header = () => {
   return (
     <section className={styles.dark}>
       <Container>
+	  <h1>Curso Gratuito</h1>
           <h2>Programa de auto motivación y exito personal</h2>
           <hr/>
           <Row>

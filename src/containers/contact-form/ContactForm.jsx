@@ -1,8 +1,10 @@
 import Container from 'react-bootstrap/Container'
 import Form from 'react-bootstrap/Form'
+import Button from 'react-bootstrap/Button'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import FormInput from '../../components/form/FormInput'
+import FormTextbox from '../../components/form/FormTextbox'
 
 const ContactForm = () => {
   return (
@@ -30,6 +32,11 @@ const ContactForm = () => {
           <FormInput id="cvv" label="CVV" placeholder="Ej. 666" help="No haga caso de nuestro certificado de Lets Encrypt"/> 
         </Col>
       </Row>
+      <Row>
+	<FormTextbox id="msg" label="Mensaje" placeholder="Cuéntanos qué es lo que te motiva a motivarte con nuestra motivación!" />
+      </Row>
+      <hr />
+        <Button variant="outline-danger" size="lg">Enviar Postulación</Button>	
       </Form>
     </Container>
   </section>
