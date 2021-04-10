@@ -18,8 +18,8 @@ const Header = () => {
           <h2>Programa de auto motivación y exito personal</h2>
           <hr/>
           <Row>
-            {frases.map(f=>(
-	     <Col>
+            {frases.map( (f, i) =>(
+	     <Col key={i}>
 		<p className={styles.frase}>{f.frase}</p>
 		<p className={styles.autor}>{f.autor}</p>
 	     </Col>
